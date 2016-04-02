@@ -8,6 +8,10 @@ buildscript {
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
 apply plugin: 'com.github.ben-manes.versions'
 apply plugin: 'kotlin'
 
