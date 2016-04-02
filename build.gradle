@@ -1,0 +1,16 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.1-2"
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.1'
+    }
+}
+
+apply plugin: 'com.github.ben-manes.versions'
+apply plugin: 'kotlin'
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.1-2"
+}
