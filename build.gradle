@@ -17,11 +17,15 @@ apply plugin: 'kotlin'
 
 test {
     useTestNG()
+    maxParallelForks = 2
 }
 
 dependencies {
     compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.1-2'
-    testCompile 'org.testng:testng:6.9.10'
+    testCompile 'com.google.inject:guice:4.0'
+    testCompile 'info.cukes:cucumber-guice:1.2.4'
     testCompile 'info.cukes:cucumber-java:1.2.4'
     testCompile 'info.cukes:cucumber-testng:1.2.4'
+    testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:2.52.0'
+    testCompile 'org.testng:testng:6.9.10'
 }
