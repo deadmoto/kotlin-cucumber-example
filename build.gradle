@@ -27,6 +27,6 @@ dependencies {
     testCompile 'info.cukes:cucumber-guice:1.2.4'
     testCompile 'info.cukes:cucumber-java:1.2.4'
     testCompile 'info.cukes:cucumber-testng:1.2.4'
-    testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:2.52.0'
+    testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:2.53.0'
     testCompile 'org.testng:testng:6.9.10'
 }
