@@ -1,15 +1,15 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
     dependencies {
-        classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.1'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.1-2'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
     }
 }
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 apply plugin: 'com.github.ben-manes.versions'
@@ -22,11 +22,11 @@ test {
 }
 
 dependencies {
-    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.1-2'
-    testCompile 'com.google.inject:guice:4.0'
-    testCompile 'info.cukes:cucumber-guice:1.2.4'
-    testCompile 'info.cukes:cucumber-java:1.2.4'
-    testCompile 'info.cukes:cucumber-testng:1.2.4'
-    testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:2.53.0'
-    testCompile 'org.testng:testng:6.9.10'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.4'
+    testCompile 'com.google.inject:guice:4.1.0'
+    testCompile 'info.cukes:cucumber-guice:1.2.5'
+    testCompile 'info.cukes:cucumber-java:1.2.5'
+    testCompile 'info.cukes:cucumber-testng:1.2.5'
+    testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:2.53.1'
+    testCompile 'org.testng:testng:6.9.13.8'
 }
